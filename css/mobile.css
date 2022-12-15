@@ -1,0 +1,799 @@
+@media screen and (max-width: 678px){
+
+    .nav-links{
+        position: absolute;
+        right: 0;
+        height: 92vh;
+        top: 8vh;
+        background-color: var(--accent-color);
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        width: 100%;
+        transform: translate(100%);
+        transition: transform 0.5s ease-in;
+        
+
+    }
+
+    body{
+        overflow-x: hidden;
+        /* to avoid horizontal scrolling */
+    }
+
+    .nav-links li{
+        opacity: 0;
+        /* to make links not visible at first */
+    }
+
+    .burger{
+        display: block;
+        cursor: pointer;
+    }
+
+    /* transform the nav links back to position */
+    .nav-active{
+        transform: translate(0);
+    }
+    
+
+
+    /* Animate the navigation links one by one */
+
+    @keyframes navLinkFade {
+        from{
+            opacity: 0;
+            transform: translateX(50px)
+        }
+        to{
+            opacity: 1;
+            transform: translateX(0px);
+        }
+    }
+
+    /* toggle the lines */
+    .toggle .line1{
+        transform: rotate(-45deg) translate(-5px, 6px);
+    }
+
+    .toggle .line2{
+        opacity: 0;
+    }
+
+    .toggle .line3{
+        transform: rotate(45deg) translate(-5px, -6px);
+    }
+
+/* Home section */
+
+ .heroSection{
+    height: calc(100vh - 8vh);
+    background-image: url('../images/sza\ ctrl\ vinyl\ in\ 2022\ _\ Dark\ green\ aesthetic\,\ Vinyl\ aesthetic\,\ Music\ cover\ photos.jpg');
+    background-repeat: no-repeat;
+    background-size: cover;
+    position: relative;
+} 
+
+.heroSection::before{
+    content: "";
+    height: 100%;
+    width: 100%;
+    top: 0;
+    left: 0;
+    position: absolute;
+}
+ 
+.pcategories {
+    background-color:rgb(1, 14, 5);
+   width: 100%;
+   height: 100px;
+   position: absolute;
+   top: 550px;
+}
+
+.pcategories .imagez a img{
+    width: 80px;
+    height: 90px;
+    display: flex;
+    flex-direction: row-reverse;
+    position: absolute;
+    top: 10px;
+    
+}
+
+.imagez .img1{
+    position: absolute;
+    left: 20px;
+}
+
+.imagez .img2{
+    position: absolute;
+    left: 120px;
+}
+
+.imagez .img3{
+    position: absolute;
+    left: 220px;
+}
+
+.products{
+    display: none;
+}
+
+.footer{  width: 100%;
+    height: 130px;
+}
+
+.footer .logo h1{
+    font-size: 10px;
+    padding-top: 1px;
+}
+
+.footer .footer-links{
+    font-size: 0.5rem;
+    position: absolute;
+    top: 685px;
+    left: 10px;
+    justify-content: space-between;
+    gap: 2px;
+    display: flex;
+    flex-direction: column;
+   
+}
+
+.footer .footer-links li{
+    list-style: none;
+}
+
+.footer .footer-links a{
+    font-weight: lighter;
+    font-family:'Arial Narrow', Arial, sans-serif;
+    text-decoration: none;
+}
+
+.footer .search-box{
+    position: absolute;
+    top: 720px;
+    left: 180px;
+    background-color: azure;
+    width: 130px;
+    height: 20px;
+    border-radius: 5px;
+}
+
+.footer .category-links{
+    display: flex;
+    flex-direction: column;
+    font-size: 0.5rem;
+    position: relative;
+    top: -55px;
+    left: 65px;
+    gap: 5px;
+}
+
+.footer .category-links li{
+    list-style: none;
+}
+
+.footer .category-links a{
+    font-weight: lighter;
+    font-family: 'Arial Narrow', Arial, sans-serif;
+    text-decoration: none;
+}
+
+.footer .txt01{
+    font-size: 0.5rem;
+    position: relative;
+    top: 60px;
+    left: 30px;
+}
+
+.footer .txt02{
+    font-size: 0.5rem;
+    position: relative;
+    top: 60px;
+    left: 30px;
+}
+
+.footer .txt03{
+    font-size: 0.5rem;
+    position: relative;
+    top: 35px;
+    left: 190px;
+}
+
+.footer .icons{
+    position: absolute;
+    top: 750px;
+    left: 80px;
+    width: 20px;
+    height: 20px;
+
+}
+
+/* Contact page styling */
+
+.heropart2{
+    background-image: url('../images/Colour\ of\ the\ month\ Many\ shades\ of\ Green\ -\ September\ —\ Suna\ &\ Toast\ -\ suna\ &\ toast.jpg');
+    background-repeat: no-repeat;
+    background-size: cover;
+    position: relative;
+}
+
+.heropart2 .form1 {
+    display: flex;
+    position: absolute;
+    width: 257px;
+    height: 320px;
+    background:rgba(43, 56, 33, 0.7); 
+    opacity: 90%;
+    top: 100px ;
+    left: 32px;
+
+}
+
+.form1 .form{
+    padding: 10px 10px;
+    margin: 5px 5px ;
+    color: var(--text-color);
+    border-bottom: var(--text-color);
+    width: 160px;
+    height: 190px;
+}
+
+.form1 input{
+    background:none;
+    border: none;
+    border-bottom: azure solid 1px;
+}
+
+textarea{
+    background: none;
+    border: azure solid 1px;
+    color: azure;
+    font-family:'Arial Narrow', Arial, sans-serif;
+    width: 225px;
+}
+
+.contact h1{
+    display: flex;
+    position: absolute;
+    top: 80px;
+    left: 90px;
+    color: var(--text-color);
+    font-family: var(--body-font);
+    font-size: 25px;
+}
+
+.info .txt01{
+    color: var(--text-color);
+    display: flex;
+    position: absolute;
+    top: 480px;
+    left: 60px;
+    font-family:'Arial Narrow', Arial, sans-serif;
+    font-size: 13px;
+}
+
+.info .txt02{
+    color: var(--text-color);
+    display: flex;
+    position: absolute;
+    top: 510px;
+    left: 60px;
+    font-family:'Arial Narrow', Arial, sans-serif;
+}
+
+.info .txt03{
+    color: var(--text-color);
+    display: flex;
+    position: absolute;
+    top: 540px;
+    left: 60px;
+    font-family:'Arial Narrow', Arial, sans-serif;
+}
+
+.info .icon1{
+    position: absolute;
+    color: azure;
+    width: 20px;
+    height: 20px;
+    top: 480px;
+    left: 35px;
+}
+
+.info .icon2{
+    position: absolute;
+    color: azure;
+    width: 20px;
+    height: 20px;
+    top: 510px;
+    left: 35px;
+}
+
+.info .icon3{
+    position: absolute;
+    color: azure;
+    width: 20px;
+    height: 20px;
+    top: 540px;
+    left: 35px;
+}
+
+.footer2{
+    width: 100%;
+    height: 130px;
+}
+
+.footer2 .logo h1{
+    font-size: 10px;
+    padding-top: 1px;
+}
+
+.footer2 .footer-links{
+    font-size: 0.5rem;
+    position: absolute;
+    top: 685px;
+    left: 10px;
+    justify-content: space-between;
+    gap: 2px;
+    display: flex;
+    flex-direction: column;
+   
+}
+
+.footer2 .footer-links li{
+    list-style: none;
+}
+
+.footer2 .footer-links a{
+    font-weight: lighter;
+    font-family:'Arial Narrow', Arial, sans-serif;
+    text-decoration: none;
+}
+
+.footer2 .search-box{
+    position: absolute;
+    top: 720px;
+    left: 180px;
+    background-color: azure;
+    width: 130px;
+    height: 20px;
+    border-radius: 5px;
+}
+
+.footer2 .category-links{
+    display: flex;
+    flex-direction: column;
+    font-size: 0.5rem;
+    position: relative;
+    top: -55px;
+    left: 65px;
+    gap: 5px;
+}
+
+.footer2 .category-links li{
+    list-style: none;
+}
+
+.footer2 .category-links a{
+    font-weight: lighter;
+    font-family: 'Arial Narrow', Arial, sans-serif;
+    text-decoration: none;
+}
+
+.footer2 .txt01{
+    font-size: 0.5rem;
+    position: relative;
+    top: 60px;
+    left: 30px;
+}
+
+.footer2 .txt02{
+    font-size: 0.5rem;
+    position: relative;
+    top: 60px;
+    left: 30px;
+}
+
+.footer2 .txt03{
+    font-size: 0.5rem;
+    position: relative;
+    top: 35px;
+    left: 190px;
+}
+
+.footer2 .icons{
+    position: absolute;
+    top: 750px;
+    left: 80px;
+    width: 20px;
+    height: 20px;
+
+}
+
+/* about page styling */
+
+.about{
+    background-color: #2B3821;
+    width: 100%;
+    height: 724px;
+}
+
+.about .img01{
+    position: absolute;
+    width: 630px;
+    height: 724px;
+}
+
+.about .aboutus h2{
+    position: absolute;
+    width: 492px;
+    height: 203px;
+    top: 40px;
+    left: 80px;
+    font-family: 'IBM Plex Sans Condensed';
+    font-style: normal;
+    font-weight: 400;
+    font-size: 34px;
+    line-height: 83px;
+    color: var(--text-color);
+}
+
+.aboutus p{
+    position: absolute;
+    width: 276px;
+    height: 373px;
+    top: 120px;
+    left: 30px;
+    font-family: 'IBM Plex Sans Condensed';
+    font-style: normal;
+    font-weight: 400;
+    font-size: 15px;
+    line-height: 25px;
+    color: var(--text-color);
+}
+
+.empty{
+    background-color: #2B3821;
+    display: flex;
+    position: absolute;
+    width: 100%;
+    height: 724px;
+    top: 46px;
+    left: 0px;
+    opacity: 50%;
+}
+
+
+
+.footer3{
+    width: 100%;
+    height: 130px;
+    position: absolute;
+    top: 650px;
+}
+
+.footer3 .logo h1{
+    font-size: 10px;
+    padding-top: 1px;
+    padding-left: 1px;
+}
+
+.footer3 .footer-links{
+    font-size: 0.5rem;
+    position: absolute;
+    top: 28px;
+    left: 10px;
+    justify-content: space-between;
+    gap: 2px;
+    display: flex;
+    flex-direction: column;
+   
+}
+
+.footer3 .footer-links li{
+    list-style: none;
+}
+
+.footer3 .footer-links a{
+    font-weight: lighter;
+    font-family:'Arial Narrow', Arial, sans-serif;
+    text-decoration: none;
+}
+
+.footer3 .search-box{
+    position: absolute;
+    top: 65px;
+    left: 180px;
+    background-color: azure;
+    width: 130px;
+    height: 20px;
+    border-radius: 5px;
+}
+
+.footer3 .category-links{
+    display: flex;
+    flex-direction: column;
+    font-size: 0.5rem;
+    position: relative;
+    top: -55px;
+    left: 65px;
+    gap: 5px;
+}
+
+.footer3 .category-links li{
+    list-style: none;
+}
+
+.footer3 .category-links a{
+    font-weight: lighter;
+    font-family: 'Arial Narrow', Arial, sans-serif;
+    text-decoration: none;
+}
+
+.footer3 .txt01{
+    font-size: 0.5rem;
+    position: relative;
+    top: 60px;
+    left: 30px;
+    color: azure;
+}
+
+.footer3 .txt02{
+    font-size: 0.5rem;
+    position: relative;
+    top: 60px;
+    left: 30px;
+    color: azure;
+}
+
+.footer3 .txt03{
+    font-size: 0.5rem;
+    position: relative;
+    top: 35px;
+    left: 190px;
+    color: azure;
+}
+
+.footer3 .icons{
+    position: absolute;
+    top: 750px;
+    left: 80px;
+    width: 20px;
+    height: 20px;
+
+}
+
+/* profile page styling */
+
+.myprofile{
+    width: 100%; 
+    height: 210px;
+}
+
+.myprofile .prfl img{
+    width: 50px;
+    height: 50px;
+    border-radius: 50%;
+    position: absolute;
+    top: 70px;
+    left: 140px;
+}
+
+.prfl p{
+    font-size: 8px;
+    display: flex;
+    flex-direction: row;
+    position: absolute;
+    top: 130px ;
+    left: 110px;
+}
+
+.prfl .t2t{
+    position: absolute;
+    left: 167px;
+}
+
+.prfl .t3t{
+    position: absolute;
+    left: 220px;
+}
+
+.myprofile .category{
+    position: relative;
+    top: 150px;
+    background-color: #2B3821;
+    color: #e4d9d9;
+    font-weight: 300;
+}
+
+body .products-page{ overflow-x: hidden; font-family: roboto; -webkit-font-smoothing: antialiased; margin: 0;}
+.flex { display: -webkit-flex; display: flex; -webkit-flex-direction: row;  flex-direction: row; -webkit-justify-content: flex-start; justify-content: flex-start;}
+
+.slider{
+    width: 100%;
+    height: 150px;
+    background-color: #fff;
+    position: absolute;
+    top: 815px;
+}
+.slider-wrapper div {position: relative; }
+
+.slider-wrapper {margin-top: 5px; 
+     margin-left: 5px;
+    }
+
+.slide-image {height: 24vw;
+}
+
+.slide-image img {width: 24vw; 
+    cursor: pointer;
+}
+
+.slide-content {width: 25vw;
+     color: rgb(72, 63, 63);
+      padding:3vw 18vw 3vw 9vw;
+    }
+.slide-date {color: #0a8acb; font-size: 1.1vw; font-weight: 400; letter-spacing: 0.1vw; padding-bottom: 1.4vw;}
+.slide-title {font-size: 15px; font-weight: 400; letter-spacing: 0.1vw; line-height: 1.55vw; padding-bottom: 1.8vw;}
+.slide-text {font-size: 8px; line-height: 4.5vw; opacity: 0.8; padding-bottom: 4vw; text-decoration: none; justify-content: space-between;}
+.slide-more {font-weight: 400; letter-spacing: 0.1vw; float: left; font-size: 0.9vw;}
+.slide-bullet {width: 0.5vw; height: 0.5vw; background-color: #0b8bcc; border-radius: 200%; position: relative; margin-left: 1.2vw;}
+.slide-nav {margin-left: 64vw; margin-top: -5.5vw;}
+
+div.overlay-blue {width: 100%; height: 100%; position: absolute; top: 0; transition: 0.5s ease all;}
+div.overlay-blue:hover {background-color: rgba(13, 27, 43, 0.5);}
+
+.arrows{width: 3.5vw; margin-top: -5.8vw; margin-left: 72vw; position: relative;
+top: -400px;}
+.arrow {display: inline-block; position: absolute; width: 1.2vw; height: 1.2vw; background: transparent; text-indent: -9999px; border-top: 0.15vw solid rgb(69, 134, 59); border-left: 0.15vw solid rgb(95, 161, 92); transition: all .1s ease-in-out; text-decoration: none; color: transparent;
+}
+.arrow:hover {border-color: #0A8ACB; border-width: 0.25vw;
+}
+.arrow:before {display: block; height: 200%; width: 200%; margin-left: -50%; margin-top: -50%; content: ""; transform: rotate(45deg);}
+.arrow.prev {transform: rotate(-45deg); left: 0;}
+.arrow.next {transform: rotate(135deg); right: 0;}
+
+.card-wrapper{
+    display: none;
+}
+
+.products-page .footer{
+    position: absolute;
+    top: 960px;
+}
+
+.products-page .footer .logo h1{
+    font-size: 10px;
+    padding-top: 1px;
+    padding-left: 1px;
+}
+
+.products-page .footer .footer-links{
+    font-size: 0.5rem;
+    position: absolute;
+    top: 28px;
+    left: 10px;
+    justify-content: space-between;
+    gap: 2px;
+    display: flex;
+    flex-direction: column;
+   
+}
+
+.products-page .footer .footer-links li{
+    list-style: none;
+}
+
+.products-page .footer .footer-links a{
+    font-weight: lighter;
+    font-family:'Arial Narrow', Arial, sans-serif;
+    text-decoration: none;
+}
+
+.products-page .footer .search-box{
+    position: absolute;
+    top: 65px;
+    left: 180px;
+    background-color: azure;
+    width: 130px;
+    height: 20px;
+    border-radius: 5px;
+}
+
+.footer3 .category-links{
+    display: flex;
+    flex-direction: column;
+    font-size: 0.5rem;
+    position: relative;
+    top: -55px;
+    left: 65px;
+    gap: 5px;
+}
+
+.footer3 .category-links li{
+    list-style: none;
+}
+
+.footer3 .category-links a{
+    font-weight: lighter;
+    font-family: 'Arial Narrow', Arial, sans-serif;
+    text-decoration: none;
+}
+
+.products-page .footer .txt01{
+    font-size: 0.5rem;
+    position: relative;
+    top: 60px;
+    left: 30px;
+    color: azure;
+}
+
+.products-page .footer .txt02{
+    font-size: 0.5rem;
+    position: relative;
+    top: 60px;
+    left: 30px;
+    color: azure;
+}
+
+.products-page .footer .txt03{
+    font-size: 0.5rem;
+    position: relative;
+    top: 25px;
+    left: 190px;
+    color: azure;
+}
+
+.products-page .footer .icons{
+    position: absolute;
+    top: 750px;
+    left: 80px;
+    width: 20px;
+    height: 20px;
+
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+}

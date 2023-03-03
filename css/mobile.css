@@ -1,5 +1,9 @@
 @media screen and (max-width: 678px){
 
+    nav{
+        position: relative;
+        z-index: 1000;
+    }
     .nav-links{
         position: absolute;
         right: 0;
@@ -208,6 +212,7 @@
     left: 80px;
     width: 20px;
     height: 20px;
+    color: aliceblue;
 
 }
 

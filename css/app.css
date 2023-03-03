@@ -570,6 +570,13 @@ footer{
     font-family:'Arial Narrow', Arial, sans-serif;
 }
 
+footer .icons{
+color: aliceblue;
+position: absolute;
+top: 2530px;
+left: 140px;
+}
+
 footer > div.search-box input{
     width: 250px;
     height: 20px;
@@ -674,6 +681,13 @@ footer{
     left: 390px;
     font-family:'Arial Narrow', Arial, sans-serif;
 }
+
+.footer .icons2{
+    color: aliceblue;
+    position: absolute;
+    top: 130px;
+    left: 140px;
+    }
 
 .footer2 > div.search-box input{
     width: 250px;
